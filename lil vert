@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter value A:");
+        int a = scanner.nextInt();
+        System.out.println("Enter value B:");
+        int b = scanner.nextInt();
+
+        if (String.valueOf(a).length() != String.valueOf(b).length() || a != b) {
+            System.out.println("Enter another value.");
+        } else {
+            System.out.println("Good choice");
+        }
+    }
+}
